@@ -1,27 +1,37 @@
 {
-  "name": "privy-sequence",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.3"
-  },
-  "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
-    "eslint": "^9",
-    "eslint-config-next": "15.3.3",
-    "@eslint/eslintrc": "^3"
-  }
+	"name": "privy-sequence",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev",
+		"build": "next build",
+		"start": "next start",
+		"lint": "pnpm exec biome lint --write",
+		"format": "pnpm exec biome format --write"
+	},
+	"dependencies": {
+		"@0xsequence/account": "^2.3.20",
+		"@0xsequence/core": "^2.3.20",
+		"@0xsequence/network": "^2.3.20",
+		"@0xsequence/sessions": "^2.3.20",
+		"@0xsequence/signhub": "^2.3.20",
+		"@privy-io/react-auth": "^2.14.2",
+		"@privy-io/wagmi": "^1.0.4",
+		"@tanstack/react-query": "^5.80.7",
+		"ethers": "^6.14.4",
+		"next": "15.3.3",
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"viem": "^2.31.3",
+		"wagmi": "^2.15.6"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@tailwindcss/postcss": "^4.1.10",
+		"@types/node": "^20.19.1",
+		"@types/react": "^19.1.8",
+		"@types/react-dom": "^19.1.6",
+		"tailwindcss": "^4.1.10",
+		"typescript": "^5.8.3"
+	}
 }
